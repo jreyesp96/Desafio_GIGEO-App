@@ -1,0 +1,40 @@
+@import '../base/typography';
+@import 'variables';
+@mixin v-small {
+   @media only screen and (max-width: 576px) {
+      @content;
+   }
+}
+
+@mixin v-large {
+   @media only screen and (min-width: 768px) {
+      @content;
+   }
+}
+@mixin propieties-videos {
+   h3 {
+      font-size: 1.20rem;
+      font-weight: $font-bold;
+      margin-top: 15px;
+   }
+   p {
+      color: $secondColor-typography;
+   }
+}
+
+@mixin size-img {
+   width: 100%;
+   object-fit: cover;
+   height: 155px;
+}
+
+@mixin margin-tittle {
+   margin-top: 35px;
+   margin-bottom: 35px;
+}
+
+@mixin span-art {
+   font-size: small;
+   font-weight: 400;
+   position: absolute;
+}

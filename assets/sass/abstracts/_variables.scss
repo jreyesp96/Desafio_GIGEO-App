@@ -1,0 +1,13 @@
+@import '../base/typography';
+
+$color-red: #EA4335;
+$color-lightBlue: #6FDAF2;
+$secondColor-typography: #888;
+$color-white: #fff;
+$color-black: #000;
+
+%logo {
+   color: $color-black;
+   font-family: $brandFont;
+   font-size: 1.8rem;
+}

@@ -1,0 +1,25 @@
+@import '../abstracts/mixins';
+@import '../abstracts/variables';
+@import '../base/typography';
+
+.main {
+   &__tittle {
+      @include margin-tittle;
+      h2 {
+         font-size: 1.5rem;
+         @include v-small {
+            text-align: center;
+         }
+      }
+   }
+   &__videos {
+      img {
+         @include size-img
+      }
+      .main--content {
+         @include propieties-videos
+      }
+   }
+
+}
+

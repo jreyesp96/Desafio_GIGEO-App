@@ -1,0 +1,35 @@
+@import '../abstracts/mixins';
+@import '../abstracts/variables';
+@import '../base/typography';
+
+body {
+   font-family: $font;
+}
+
+nav {
+   .navbar-brand {
+      color: $color-black;
+      font-family: $brandFont;
+      font-size: 1.8rem;
+      span {
+         @include span-art;
+      }
+   }
+
+   .navbar-nav {
+      flex-direction: row;
+
+      .nav-link {
+         margin-left: 2rem;
+         color: $color-black;
+         font-size: 20px;
+      } 
+   }
+
+   .nav-link--viewNone {
+      @include v-small {
+         display: none;
+      }
+   }
+
+}

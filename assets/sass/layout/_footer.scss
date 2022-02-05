@@ -1,0 +1,18 @@
+@import '../abstracts/mixins';
+@import '../base/typography';
+@import '../abstracts/variables';
+@import 'navigation';
+
+.footer {
+   text-align: center;
+   background: #F6F8FA;
+   margin: 20px 0 0 0;
+   padding: 20px;
+   &__logo a {
+      @extend %logo;
+      text-decoration: none;
+   }
+   &__logo span {
+      @include span-art;
+   }
+}
